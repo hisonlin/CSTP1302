@@ -67,7 +67,7 @@ namespace Lab3
                     return;
             }
 
-            // Add the operation details and result to the history ListBox
+            // Add the operation details and result to the history ListBox.
             resultHistoryListBox.Items.Add(operationText);
 
             // Update the result TextBox
