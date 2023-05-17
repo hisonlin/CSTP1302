@@ -1,3 +1,5 @@
+using System.Security.Cryptography.X509Certificates;
+
 namespace week3
 {
     public partial class Form1 : Form
@@ -60,6 +62,11 @@ namespace week3
             {
                 listBox2.Items.Add(inputFile.ReadLine());
             }
+        }
+
+        private void openFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            
         }
     }
 }

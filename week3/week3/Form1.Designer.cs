@@ -41,6 +41,7 @@
             button2 = new Button();
             button3 = new Button();
             listBox2 = new ListBox();
+            openFileDialog1 = new OpenFileDialog();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -184,6 +185,10 @@
             listBox2.Size = new Size(120, 94);
             listBox2.TabIndex = 12;
             // 
+            // openFileDialog1
+            // 
+            openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -221,5 +226,6 @@
         private Button button2;
         private Button button3;
         private ListBox listBox2;
+        private OpenFileDialog openFileDialog1;
     }
 }
