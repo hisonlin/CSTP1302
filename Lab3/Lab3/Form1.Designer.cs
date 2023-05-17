@@ -29,13 +29,15 @@
         private void InitializeComponent()
         {
             resultHistoryListBox = new ListBox();
-            additionButton = new Button();
-            subtractionButton = new Button();
-            multiplicationButton = new Button();
-            divisionButton = new Button();
+            addition = new Button();
+            subtraction = new Button();
+            multiplication = new Button();
+            division = new Button();
             operand1TextBox = new TextBox();
             operand2TextBox = new TextBox();
             resultTextBox = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // resultHistoryListBox
@@ -47,45 +49,45 @@
             resultHistoryListBox.Size = new Size(241, 79);
             resultHistoryListBox.TabIndex = 0;
             // 
-            // additionButton
+            // addition
             // 
-            additionButton.Location = new Point(311, 205);
-            additionButton.Name = "additionButton";
-            additionButton.Size = new Size(46, 23);
-            additionButton.TabIndex = 1;
-            additionButton.Text = "+";
-            additionButton.UseVisualStyleBackColor = true;
-            additionButton.Click += additionButton_Click;
+            addition.Location = new Point(311, 205);
+            addition.Name = "addition";
+            addition.Size = new Size(46, 23);
+            addition.TabIndex = 1;
+            addition.Text = "+";
+            addition.UseVisualStyleBackColor = true;
+            addition.Click += addition_Click;
             // 
-            // subtractionButton
+            // subtraction
             // 
-            subtractionButton.Location = new Point(376, 205);
-            subtractionButton.Name = "subtractionButton";
-            subtractionButton.Size = new Size(46, 23);
-            subtractionButton.TabIndex = 2;
-            subtractionButton.Text = "-";
-            subtractionButton.UseVisualStyleBackColor = true;
-            subtractionButton.Click += subtractionButton_Click;
+            subtraction.Location = new Point(376, 205);
+            subtraction.Name = "subtraction";
+            subtraction.Size = new Size(46, 23);
+            subtraction.TabIndex = 2;
+            subtraction.Text = "-";
+            subtraction.UseVisualStyleBackColor = true;
+            subtraction.Click += subtraction_Click;
             // 
-            // multiplicationButton
+            // multiplication
             // 
-            multiplicationButton.Location = new Point(441, 205);
-            multiplicationButton.Name = "multiplicationButton";
-            multiplicationButton.Size = new Size(46, 23);
-            multiplicationButton.TabIndex = 3;
-            multiplicationButton.Text = "*";
-            multiplicationButton.UseVisualStyleBackColor = true;
-            multiplicationButton.Click += multiplicationButton_Click;
+            multiplication.Location = new Point(441, 205);
+            multiplication.Name = "multiplication";
+            multiplication.Size = new Size(46, 23);
+            multiplication.TabIndex = 3;
+            multiplication.Text = "*";
+            multiplication.UseVisualStyleBackColor = true;
+            multiplication.Click += multiplication_Click;
             // 
-            // divisionButton
+            // division
             // 
-            divisionButton.Location = new Point(506, 205);
-            divisionButton.Name = "divisionButton";
-            divisionButton.Size = new Size(46, 23);
-            divisionButton.TabIndex = 4;
-            divisionButton.Text = "/";
-            divisionButton.UseVisualStyleBackColor = true;
-            divisionButton.Click += divisionButton_Click;
+            division.Location = new Point(506, 205);
+            division.Name = "division";
+            division.Size = new Size(46, 23);
+            division.TabIndex = 4;
+            division.Text = "/";
+            division.UseVisualStyleBackColor = true;
+            division.Click += division_Click;
             // 
             // operand1TextBox
             // 
@@ -103,23 +105,43 @@
             // 
             // resultTextBox
             // 
-            resultTextBox.Location = new Point(311, 62);
+            resultTextBox.Location = new Point(311, 47);
             resultTextBox.Name = "resultTextBox";
             resultTextBox.Size = new Size(241, 23);
             resultTextBox.TabIndex = 7;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(311, 29);
+            label1.Name = "label1";
+            label1.Size = new Size(42, 15);
+            label1.TabIndex = 8;
+            label1.Text = "Result:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(311, 73);
+            label2.Name = "label2";
+            label2.Size = new Size(48, 15);
+            label2.TabIndex = 9;
+            label2.Text = "History:";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(resultTextBox);
             Controls.Add(operand2TextBox);
             Controls.Add(operand1TextBox);
-            Controls.Add(divisionButton);
-            Controls.Add(multiplicationButton);
-            Controls.Add(subtractionButton);
-            Controls.Add(additionButton);
+            Controls.Add(division);
+            Controls.Add(multiplication);
+            Controls.Add(subtraction);
+            Controls.Add(addition);
             Controls.Add(resultHistoryListBox);
             Name = "Form1";
             Text = "Form1";
@@ -130,12 +152,14 @@
         #endregion
 
         private ListBox resultHistoryListBox;
-        private Button additionButton;
-        private Button subtractionButton;
-        private Button multiplicationButton;
-        private Button divisionButton;
+        private Button addition;
+        private Button subtraction;
+        private Button multiplication;
+        private Button division;
         private TextBox operand1TextBox;
         private TextBox operand2TextBox;
         private TextBox resultTextBox;
+        private Label label1;
+        private Label label2;
     }
 }

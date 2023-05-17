@@ -7,22 +7,22 @@ namespace Lab3
             InitializeComponent();
         }
 
-        private void additionButton_Click(object sender, EventArgs e)
+        private void addition_Click(object sender, EventArgs e)
         {
             PerformOperation("+");
         }
 
-        private void subtractionButton_Click(object sender, EventArgs e)
+        private void subtraction_Click(object sender, EventArgs e)
         {
             PerformOperation("-");
         }
 
-        private void multiplicationButton_Click(object sender, EventArgs e)
+        private void multiplication_Click(object sender, EventArgs e)
         {
             PerformOperation("*");
         }
 
-        private void divisionButton_Click(object sender, EventArgs e)
+        private void division_Click(object sender, EventArgs e)
         {
             PerformOperation("/");
         }
