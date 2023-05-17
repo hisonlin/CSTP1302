@@ -66,7 +66,7 @@ namespace Lab3
                 default:
                     return;
             }
-
+            ////////////////////////////////////////
             // Add the operation details and result to the history ListBox.
             resultHistoryListBox.Items.Add(operationText);
 
