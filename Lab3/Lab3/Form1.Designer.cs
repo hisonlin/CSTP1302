@@ -44,14 +44,14 @@
             // 
             resultHistoryListBox.FormattingEnabled = true;
             resultHistoryListBox.ItemHeight = 15;
-            resultHistoryListBox.Location = new Point(311, 91);
+            resultHistoryListBox.Location = new Point(12, 71);
             resultHistoryListBox.Name = "resultHistoryListBox";
             resultHistoryListBox.Size = new Size(241, 79);
             resultHistoryListBox.TabIndex = 0;
             // 
             // addition
             // 
-            addition.Location = new Point(311, 205);
+            addition.Location = new Point(12, 185);
             addition.Name = "addition";
             addition.Size = new Size(46, 23);
             addition.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             // subtraction
             // 
-            subtraction.Location = new Point(376, 205);
+            subtraction.Location = new Point(77, 185);
             subtraction.Name = "subtraction";
             subtraction.Size = new Size(46, 23);
             subtraction.TabIndex = 2;
@@ -71,7 +71,7 @@
             // 
             // multiplication
             // 
-            multiplication.Location = new Point(441, 205);
+            multiplication.Location = new Point(142, 185);
             multiplication.Name = "multiplication";
             multiplication.Size = new Size(46, 23);
             multiplication.TabIndex = 3;
@@ -81,7 +81,7 @@
             // 
             // division
             // 
-            division.Location = new Point(506, 205);
+            division.Location = new Point(207, 185);
             division.Name = "division";
             division.Size = new Size(46, 23);
             division.TabIndex = 4;
@@ -91,21 +91,21 @@
             // 
             // operand1TextBox
             // 
-            operand1TextBox.Location = new Point(311, 176);
+            operand1TextBox.Location = new Point(12, 156);
             operand1TextBox.Name = "operand1TextBox";
             operand1TextBox.Size = new Size(100, 23);
             operand1TextBox.TabIndex = 5;
             // 
             // operand2TextBox
             // 
-            operand2TextBox.Location = new Point(452, 176);
+            operand2TextBox.Location = new Point(153, 156);
             operand2TextBox.Name = "operand2TextBox";
             operand2TextBox.Size = new Size(100, 23);
             operand2TextBox.TabIndex = 6;
             // 
             // resultTextBox
             // 
-            resultTextBox.Location = new Point(311, 47);
+            resultTextBox.Location = new Point(12, 27);
             resultTextBox.Name = "resultTextBox";
             resultTextBox.Size = new Size(241, 23);
             resultTextBox.TabIndex = 7;
@@ -113,7 +113,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(311, 29);
+            label1.Location = new Point(12, 9);
             label1.Name = "label1";
             label1.Size = new Size(42, 15);
             label1.TabIndex = 8;
@@ -122,7 +122,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(311, 73);
+            label2.Location = new Point(12, 53);
             label2.Name = "label2";
             label2.Size = new Size(48, 15);
             label2.TabIndex = 9;
@@ -132,7 +132,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(265, 239);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(resultTextBox);
