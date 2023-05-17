@@ -41,5 +41,25 @@ namespace week3
         {
             MessageBox.Show(listBox1.SelectedItem.ToString());
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            StreamWriter outputFile;
+            outputFile = File.CreateText("test.txt");//D:\CSPT1302-windowsProgramming\week3\week3\bin\Debug\net6.0-windows
+            outputFile.WriteLine("Hello");
+            outputFile.WriteLine("World");
+            outputFile.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            StreamReader inputFile;
+            inputFile = File.OpenText("test.txt");
+
+            while (!inputFile.EndOfStream)
+            {
+                listBox2.Items.Add(inputFile.ReadLine());
+            }
+        }
     }
 }

@@ -38,6 +38,9 @@
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
             listBox1 = new ListBox();
+            button2 = new Button();
+            button3 = new Button();
+            listBox2 = new ListBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -152,11 +155,43 @@
             listBox1.TabIndex = 9;
             listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
+            // button2
+            // 
+            button2.Location = new Point(230, 25);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 10;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(431, 46);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 11;
+            button3.Text = "button3";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // listBox2
+            // 
+            listBox2.FormattingEnabled = true;
+            listBox2.ItemHeight = 15;
+            listBox2.Location = new Point(386, 340);
+            listBox2.Name = "listBox2";
+            listBox2.Size = new Size(120, 94);
+            listBox2.TabIndex = 12;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(listBox2);
+            Controls.Add(button3);
+            Controls.Add(button2);
             Controls.Add(listBox1);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
@@ -183,5 +218,8 @@
         private GroupBox groupBox1;
         private GroupBox groupBox2;
         private ListBox listBox1;
+        private Button button2;
+        private Button button3;
+        private ListBox listBox2;
     }
 }
